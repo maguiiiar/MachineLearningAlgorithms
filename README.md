@@ -5,11 +5,11 @@ Algorithms for implementing statistical & ml models.
 
  - It shrinks the parameters, therefore it is mostly used to prevent multicollinearity;
  - It reduces the model complexity by coefficient shrinkage;
- - It uses L2 regularization technique.
+ - It uses L2 regularization technique (α = 0 and λ is selected through cross validation).
  
  **LASSO REGRESSION**
  
- - It uses L1 regularization technique;
+ - It uses L1 regularization technique (α = 1 and λ is selected through cross validation).
  - It is generally used when we have more number of features, because it automatically does feature selection accordlying with λ parameter, which needs to be chosen/tuned by the cross-validation.
  
  **ELASTIC NET REGRESSION**
@@ -21,4 +21,4 @@ Algorithms for implementing statistical & ml models.
 There are two ways of develop lasso, ridge or elastic net models in R: using *glmnet* package or *caret* package.
 *glmnet* package allows us to implement lasso, ridge or elastic net and has several interesting plots to follow modelling development.
 
-*caret* package allows us to compare and tune models easely, even using different methods. It removes strucuture, input and output differences between functions from different packages, unifying it all in only one. *caret* does not differentiate *lambda 1 standard deviation* and "lambda minimum*.
+*caret* package allows us to compare and tune models easely, even using different methods. It removes strucuture, input and output differences between functions from different packages, unifying it all in only one. *caret* does not differentiate *lambda 1 standard deviation* and *lambda minimum*.

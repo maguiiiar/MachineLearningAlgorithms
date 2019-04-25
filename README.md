@@ -1,7 +1,7 @@
 # MachineLearningAlgorithms
 Algorithms for implementing statistical & ml models.
 
-RIDGE REGRESSION:
+**RIDGE REGRESSION:**
 
  - It shrinks the parameters, therefore it is mostly used to prevent multicollinearity.
  - It reduces the model complexity by coefficient shrinkage.

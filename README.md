@@ -14,7 +14,7 @@ Algorithms for implementing statistical & ml models.
  
  **ELASTIC NET REGRESSION**
  
- Elastic net is basically a combination of both L1 and L2 regularization. So if you know elastic net, you can implement both Ridge and Lasso by tuning the parameters \alpha and \lambda.
+ Elastic net is basically a combination of both L1 and L2 regularization. So if you know elastic net, you can implement both Ridge and Lasso by tuning the parameters $\alpha$ and $\lambda$.
 
 *elasticnet_model_with_imbalance.R* makes possible lasso, ridge and elastic net models being created and utilizes techniques to deal with imbalanced target databases, comparing models with different techniques. Also, the same structure can be applied to several other modelling methods (statistical or machine learning/AI ones), since it utilizes *caret* package to develop all structure.
 

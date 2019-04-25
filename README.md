@@ -3,7 +3,7 @@ Algorithms for implementing statistical & ml models.
 
 # REGRESSION
 
-Standard regression models (or ordinary least squares methods) performs poorly in a situation where you have a large multivariate data set containing a number of variables superior to the number of samples.
+Standard regression models performs poorly in a situation where you have a large multivariate data set containing a number of variables superior to the number of samples.
 
 A better alternative is to use penalized regression, which allow the creation of a regression model that is penalized for having too many variables in the model, by adding a constraint in the equation (James et al. 2014,P. Bruce and Bruce (2017)). This is also known as shrinkage or regularization methods.
 

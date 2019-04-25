@@ -3,9 +3,18 @@ Algorithms for implementing statistical & ml models.
 
 **RIDGE REGRESSION:**
 
- - It shrinks the parameters, therefore it is mostly used to prevent multicollinearity.
- - It reduces the model complexity by coefficient shrinkage.
- - It uses L2 regularization technique. (which I will discussed later in this article)
+ - It shrinks the parameters, therefore it is mostly used to prevent multicollinearity;
+ - It reduces the model complexity by coefficient shrinkage;
+ - It uses L2 regularization technique.
+ 
+ **LASSO REGRESSION**
+ 
+ - It uses L1 regularization technique;
+ - It is generally used when we have more number of features, because it automatically does feature selection accordlying with λ parameter, which needs to be chosen/tuned by the cross-validation.
+ 
+ **ELASTIC NET REGRESSION**
+ 
+ Elastic net is basically a combination of both L1 and L2 regularization. So if you know elastic net, you can implement both Ridge and Lasso by tuning the parameters \alpha and \lambda.
 
 *elasticnet_model_with_imbalance.R* makes possible lasso, ridge and elastic net models being created and utilizes techniques to deal with imbalanced target databases, comparing models with different techniques. Also, the same structure can be applied to several other modelling methods (statistical or machine learning/AI ones), since it utilizes *caret* package to develop all structure.
 

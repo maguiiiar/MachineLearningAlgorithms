@@ -1,9 +1,19 @@
 # MachineLearningAlgorithms
 Algorithms for implementing statistical & ml models.
 
+# REGRESSION
+
+The standard linear model (or the ordinary least squares method) performs poorly in a situation, where you have a large multivariate data set containing a number of variables superior to the number of samples.
+
+A better alternative is the penalized regression allowing to create a linear regression model that is penalized, for having too many variables in the model, by adding a constraint in the equation (James et al. 2014,P. Bruce and Bruce (2017)). This is also known as shrinkage or regularization methods.
+
+The consequence of imposing this penalty, is to reduce (i.e. shrink) the coefficient values towards zero. This allows the less contributive variables to have a coefficient close to zero or equal zero.
+
+Note that, the shrinkage requires the selection of a tuning parameter (lambda) that determines the amount of shrinkage.
+
 *elasticnet_model_with_imbalance.R* makes possible lasso, ridge and elastic net models being created and utilizes techniques to deal with imbalanced target databases, comparing models with different techniques. Also, the same structure can be applied to several other modelling methods (statistical or machine learning/AI ones), since it utilizes *caret* package to develop all structure.
 
-# PENALIZED REGRESSIONS
+## PENALIZED REGRESSIONS
 
 **RIDGE REGRESSION:**
 

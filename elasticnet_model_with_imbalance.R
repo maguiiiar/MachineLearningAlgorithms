@@ -83,7 +83,7 @@ lambda = ifelse(variables <= 20, cv.lasso$lambda.1se,
 lasso.model <- glmnet(X, y, family = "binomial", lambda = lambda, alpha = 1)#, penalty.factor = penalty.factor)
 
 ################################
-# performance statistics model #
+# performance model statistics #
 ################################
 
 coefs <- tidy(lasso.model)

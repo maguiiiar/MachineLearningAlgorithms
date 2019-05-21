@@ -23,7 +23,7 @@ Note that the shrinkage requires the selection of a tuning parameter (lambda) th
  
  **LASSO REGRESSION**
  
- - It uses L1 regularization technique (α = 1 and λ is selected through cross validation).
+ - It uses L1 regularization technique (α = 1 and λ is selected through cross validation);
  - It is generally used when we have more number of features, because it automatically does feature selection accordlying with λ parameter, which needs to be chosen/tuned by the cross-validation.
  
  **ELASTIC NET REGRESSION**

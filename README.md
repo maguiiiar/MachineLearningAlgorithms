@@ -30,7 +30,7 @@ Note that the shrinkage requires the selection of a tuning parameter (lambda) th
  
  - Elastic net is basically a combination of both L1 and L2 regularization, so you can implement both Ridge and Lasso by tuning the parameters α and λ simutaneously.
 
-There are two ways of develop lasso, ridge or elastic net models in R: using *glmnet* package or *caret* package.
+There are two ways to develop lasso, ridge or elastic net models in R: using *glmnet* package or *caret* package.
 *glmnet* package allows us to implement lasso, ridge or elastic net and has several interesting plots to follow modelling development.
 
 *caret* package allows us to compare and tune models easely, even using different methods. It removes structure, input and output differences between functions from different packages, unifying it all into only one package. A negative point for *caret* for penalized regression is that it does not differentiate *lambda 1 standard deviation* and *lambda minimum*. *bestTune* output from caret is equivalent to *lambda minimum*.

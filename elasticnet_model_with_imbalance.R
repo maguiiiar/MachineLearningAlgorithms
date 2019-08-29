@@ -17,7 +17,7 @@ control <- trainControl(method="repeatedcv",
                         savePredictions = "all", number = 10, repeats = 3)
 
 # running a logistic regression - LASSO model (glmnet with alpha = 1 and lambda between 0 and 1);
-#                                 RIDGE model (glmnet with alpha between 0 and 1 and lambda = 1);
+#                                 RIDGE model (glmnet with alpha = 0 and lambda between 0 and 1);
 #                                 ELASTIC NET model (glmnet with alpha and lambda between 0 and 1).
 set.seed(7)
 model.caret <- caret::train(target ~ ., data = model_db,
